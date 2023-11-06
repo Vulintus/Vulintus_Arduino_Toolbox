@@ -10,6 +10,13 @@
 
 */
 
+#ifndef VULINTUS_ARDUINO_TOOLBOX_H
+#define VULINTUS_ARDUINO_TOOLBOX_H
+
+#include <Arduino.h>
+
 void Print_FW_Filename(void);           //Print the sketch filename from the macro.
 void Print_FW_Date(void);               //Print the sketch upload date from the macro.
 void Print_FW_Time();                   //Print the sketch upload time from the macro.
+
+#endif 								    //#ifndef VULINTUS_ARDUINO_TOOLBOX_H
