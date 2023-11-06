@@ -14,7 +14,7 @@
 
 
 //Print the sketch filename from the macro.
-void Print_FW_Filename() {
+void Print_FW_Filename(void) {
   char s[] = __FILE__;                  //Grab the filename from the macro.
   uint8_t b = sizeof(s);                //Find the number of characters in the filename.
   while ((b > 0) && (s[b] != '\\')) {   //Loop until a forward slash is found.
@@ -26,14 +26,14 @@ void Print_FW_Filename() {
 
 
 //Print the sketch upload date from the macro.
-void Print_FW_Date() {
+void Print_FW_Date(void) {
   char s[] = __DATE__;                  //Grab the upload date from the macro.
   Serial.println(s);                    //Print the upload date.
 }
 
 
 //Print the sketch upload time from the macro.
-void Print_FW_Time() {
+void Print_FW_Time(void) {
   char s[] = __TIME__;                  //Grab the upload time from the macro.
   Serial.println(s);                    //Print the upload date.
 }
